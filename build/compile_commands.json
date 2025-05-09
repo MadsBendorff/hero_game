@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/main.cpp.o -c /home/sammy/hero_game/main.cpp",
+  "file": "/home/sammy/hero_game/main.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o -c /home/sammy/hero_game/SourceFiles/Hero.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/Hero.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o -c /home/sammy/hero_game/SourceFiles/Enemy.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/Enemy.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o -c /home/sammy/hero_game/SourceFiles/CombatManager.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/CombatManager.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/hero_game.dir/main.cpp.o CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o -o hero_game 
