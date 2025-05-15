@@ -249,6 +249,54 @@ SourceFiles/Hero.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.s
 .PHONY : SourceFiles/Hero.cpp.s
 
+SourceFiles/Weapon.o: SourceFiles/Weapon.cpp.o
+.PHONY : SourceFiles/Weapon.o
+
+# target to build an object file
+SourceFiles/Weapon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.o
+.PHONY : SourceFiles/Weapon.cpp.o
+
+SourceFiles/Weapon.i: SourceFiles/Weapon.cpp.i
+.PHONY : SourceFiles/Weapon.i
+
+# target to preprocess a source file
+SourceFiles/Weapon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.i
+.PHONY : SourceFiles/Weapon.cpp.i
+
+SourceFiles/Weapon.s: SourceFiles/Weapon.cpp.s
+.PHONY : SourceFiles/Weapon.s
+
+# target to generate assembly for a file
+SourceFiles/Weapon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.s
+.PHONY : SourceFiles/Weapon.cpp.s
+
+SourceFiles/WeaponFactory.o: SourceFiles/WeaponFactory.cpp.o
+.PHONY : SourceFiles/WeaponFactory.o
+
+# target to build an object file
+SourceFiles/WeaponFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.o
+.PHONY : SourceFiles/WeaponFactory.cpp.o
+
+SourceFiles/WeaponFactory.i: SourceFiles/WeaponFactory.cpp.i
+.PHONY : SourceFiles/WeaponFactory.i
+
+# target to preprocess a source file
+SourceFiles/WeaponFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.i
+.PHONY : SourceFiles/WeaponFactory.cpp.i
+
+SourceFiles/WeaponFactory.s: SourceFiles/WeaponFactory.cpp.s
+.PHONY : SourceFiles/WeaponFactory.s
+
+# target to generate assembly for a file
+SourceFiles/WeaponFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.s
+.PHONY : SourceFiles/WeaponFactory.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -297,6 +345,12 @@ help:
 	@echo "... SourceFiles/Hero.o"
 	@echo "... SourceFiles/Hero.i"
 	@echo "... SourceFiles/Hero.s"
+	@echo "... SourceFiles/Weapon.o"
+	@echo "... SourceFiles/Weapon.i"
+	@echo "... SourceFiles/Weapon.s"
+	@echo "... SourceFiles/WeaponFactory.o"
+	@echo "... SourceFiles/WeaponFactory.i"
+	@echo "... SourceFiles/WeaponFactory.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

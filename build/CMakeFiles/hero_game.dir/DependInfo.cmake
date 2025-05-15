@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sammy/hero_game/SourceFiles/Enemy.cpp" "CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o.d"
   "/home/sammy/hero_game/SourceFiles/EnemyFactory.cpp" "CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o.d"
   "/home/sammy/hero_game/SourceFiles/Hero.cpp" "CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o.d"
+  "/home/sammy/hero_game/SourceFiles/Weapon.cpp" "CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.o.d"
+  "/home/sammy/hero_game/SourceFiles/WeaponFactory.cpp" "CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.o.d"
   "/home/sammy/hero_game/main.cpp" "CMakeFiles/hero_game.dir/main.cpp.o" "gcc" "CMakeFiles/hero_game.dir/main.cpp.o.d"
   )
 

@@ -28,5 +28,15 @@
   "directory": "/home/sammy/hero_game/build",
   "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o -c /home/sammy/hero_game/SourceFiles/Cave.cpp",
   "file": "/home/sammy/hero_game/SourceFiles/Cave.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.o -c /home/sammy/hero_game/SourceFiles/Weapon.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/Weapon.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.o -c /home/sammy/hero_game/SourceFiles/WeaponFactory.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/WeaponFactory.cpp"
 }
 ]

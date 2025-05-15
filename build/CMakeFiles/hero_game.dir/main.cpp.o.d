@@ -149,9 +149,11 @@ CMakeFiles/hero_game.dir/main.cpp.o: /home/sammy/hero_game/main.cpp \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /home/sammy/hero_game/Headers/Hero.h \
+ /home/sammy/hero_game/Headers/Weapon.h \
  /home/sammy/hero_game/Headers/Enemy.h \
  /home/sammy/hero_game/Headers/CombatManager.h \
  /home/sammy/hero_game/Headers/Hero.h \
  /home/sammy/hero_game/Headers/Enemy.h \
  /home/sammy/hero_game/Headers/EnemyFactory.h \
- /home/sammy/hero_game/Headers/Cave.h
+ /home/sammy/hero_game/Headers/Cave.h \
+ /home/sammy/hero_game/Headers/WeaponFactory.h /usr/include/c++/11/ctime

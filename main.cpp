@@ -6,12 +6,16 @@
 #include "CombatManager.h"
 #include "EnemyFactory.h"
 #include "Cave.h"
+#include "WeaponFactory.h"
+#include <ctime> 
+
 
 int main() {
     std::string name;
     std::cout << "Enter hero name: ";
     std::getline(std::cin, name);
     Hero hero(name);
+    srand(time(0));
 
     std::vector<Cave> caves = {
         Cave("Goblin Nest", 50, EnemyFactory::generateEnemies(hero.getLevel())),
@@ -28,11 +32,20 @@ int main() {
                   << " | Strength: " << hero.getStrength()
                   << " | Gold: " << hero.getGold() << "\n";
 
+        Weapon* weapon = hero.getWeapon();
+        if (weapon != nullptr) {
+            std::cout << "Weapon: " << weapon->getName()
+                      << " | Durability: " << weapon->getDurability() << "\n";
+        } else {
+            std::cout << "Weapon: None\n";
+        }
+
         std::cout << "\nChoose a cave to enter:\n";
         for (size_t i = 0; i < caves.size(); ++i) {
             std::cout << i + 1 << ". " << caves[i].getName()
                       << " (Gold reward: " << caves[i].getGold() << ")\n";
         }
+
         std::cout << "0. Quit\n";
 
         int choice;
@@ -61,10 +74,19 @@ int main() {
         if (hero.isAlive()) {
             std::cout << "You completed the cave and earned " << selectedCave.getGold() << " gold!\n";
             hero.addGold(selectedCave.getGold());
-        } else {
+
+            int chance = rand() % 5;
+            if (chance == 0) {
+                Weapon* newWeapon = WeaponFactory::createRandomWeapon();
+                hero.setWeapon(newWeapon);
+                std::cout << "You found a weapon!: " << newWeapon->getName() << "!\n";
+            }
+        } 
+        else {
             std::cout << "You died in the cave...\n";
         }
     }
 
     return 0;
 }
+

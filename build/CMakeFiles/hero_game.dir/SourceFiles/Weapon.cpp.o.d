@@ -1,6 +1,6 @@
-CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o: \
- /home/sammy/hero_game/SourceFiles/Hero.cpp /usr/include/stdc-predef.h \
- /home/sammy/hero_game/Headers/Hero.h /usr/include/c++/11/string \
+CMakeFiles/hero_game.dir/SourceFiles/Weapon.cpp.o: \
+ /home/sammy/hero_game/SourceFiles/Weapon.cpp /usr/include/stdc-predef.h \
+ /home/sammy/hero_game/Headers/Weapon.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -127,5 +127,4 @@ CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc \
- /home/sammy/hero_game/Headers/Weapon.h
+ /usr/include/c++/11/bits/basic_string.tcc

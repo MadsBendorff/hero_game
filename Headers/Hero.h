@@ -1,6 +1,7 @@
 #ifndef HERO_H
 #define HERO_H
 #include <string>
+#include "Weapon.h"
 
 class Hero {
 public:
@@ -16,6 +17,8 @@ public:
     bool isAlive() const;
     void addGold(int amount);
     int getGold() const;
+    void setWeapon(Weapon* w);
+    Weapon* getWeapon() const;
 
 private:
     std::string name;
@@ -24,6 +27,7 @@ private:
     int xp;
     int level;
     int gold;
+    Weapon* weapon;
 };
 
 #endif 

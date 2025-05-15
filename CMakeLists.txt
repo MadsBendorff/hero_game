@@ -14,6 +14,8 @@ add_executable(hero_game
     SourceFiles/CombatManager.cpp
     SourceFiles/EnemyFactory.cpp
     SourceFiles/Cave.cpp 
+    SourceFiles/Weapon.cpp
+    SourceFiles/WeaponFactory.cpp
 )
 
 
