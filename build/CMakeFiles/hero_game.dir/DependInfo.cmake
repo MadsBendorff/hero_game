@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sammy/hero_game/SourceFiles/Cave.cpp" "CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o.d"
   "/home/sammy/hero_game/SourceFiles/CombatManager.cpp" "CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o.d"
+  "/home/sammy/hero_game/SourceFiles/DatabaseManager.cpp" "CMakeFiles/hero_game.dir/SourceFiles/DatabaseManager.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/DatabaseManager.cpp.o.d"
   "/home/sammy/hero_game/SourceFiles/Enemy.cpp" "CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o.d"
   "/home/sammy/hero_game/SourceFiles/EnemyFactory.cpp" "CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o.d"
   "/home/sammy/hero_game/SourceFiles/Hero.cpp" "CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o" "gcc" "CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o.d"

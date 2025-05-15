@@ -38,5 +38,10 @@
   "directory": "/home/sammy/hero_game/build",
   "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/WeaponFactory.cpp.o -c /home/sammy/hero_game/SourceFiles/WeaponFactory.cpp",
   "file": "/home/sammy/hero_game/SourceFiles/WeaponFactory.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/DatabaseManager.cpp.o -c /home/sammy/hero_game/SourceFiles/DatabaseManager.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/DatabaseManager.cpp"
 }
 ]

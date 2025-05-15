@@ -19,6 +19,7 @@ public:
     int getGold() const;
     void setWeapon(Weapon* w);
     Weapon* getWeapon() const;
+    Hero(const std::string& name, int level, int xp, int gold);
 
 private:
     std::string name;

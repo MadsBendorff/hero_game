@@ -177,6 +177,30 @@ SourceFiles/CombatManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.s
 .PHONY : SourceFiles/CombatManager.cpp.s
 
+SourceFiles/DatabaseManager.o: SourceFiles/DatabaseManager.cpp.o
+.PHONY : SourceFiles/DatabaseManager.o
+
+# target to build an object file
+SourceFiles/DatabaseManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/DatabaseManager.cpp.o
+.PHONY : SourceFiles/DatabaseManager.cpp.o
+
+SourceFiles/DatabaseManager.i: SourceFiles/DatabaseManager.cpp.i
+.PHONY : SourceFiles/DatabaseManager.i
+
+# target to preprocess a source file
+SourceFiles/DatabaseManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/DatabaseManager.cpp.i
+.PHONY : SourceFiles/DatabaseManager.cpp.i
+
+SourceFiles/DatabaseManager.s: SourceFiles/DatabaseManager.cpp.s
+.PHONY : SourceFiles/DatabaseManager.s
+
+# target to generate assembly for a file
+SourceFiles/DatabaseManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/DatabaseManager.cpp.s
+.PHONY : SourceFiles/DatabaseManager.cpp.s
+
 SourceFiles/Enemy.o: SourceFiles/Enemy.cpp.o
 .PHONY : SourceFiles/Enemy.o
 
@@ -336,6 +360,9 @@ help:
 	@echo "... SourceFiles/CombatManager.o"
 	@echo "... SourceFiles/CombatManager.i"
 	@echo "... SourceFiles/CombatManager.s"
+	@echo "... SourceFiles/DatabaseManager.o"
+	@echo "... SourceFiles/DatabaseManager.i"
+	@echo "... SourceFiles/DatabaseManager.s"
 	@echo "... SourceFiles/Enemy.o"
 	@echo "... SourceFiles/Enemy.i"
 	@echo "... SourceFiles/Enemy.s"

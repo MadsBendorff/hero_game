@@ -46,3 +46,11 @@ Weapon* Hero::getWeapon() const {
     return weapon;
 }
 
+Hero::Hero(const std::string& name, int level, int xp, int gold)
+    : name(name), level(level), xp(xp), gold(gold)
+{
+    hp = 10 + (level - 1) * 2;
+    strength = 2 + (level - 1);
+}
+
+

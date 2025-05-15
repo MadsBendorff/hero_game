@@ -3,10 +3,10 @@ project(hero_game)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Include the header files from the Headers folder
 include_directories(Headers)
 
-# Add the executable with all source files
+find_package(SQLite3 REQUIRED)
+
 add_executable(hero_game
     main.cpp
     SourceFiles/Hero.cpp
@@ -16,6 +16,7 @@ add_executable(hero_game
     SourceFiles/Cave.cpp 
     SourceFiles/Weapon.cpp
     SourceFiles/WeaponFactory.cpp
+    SourceFiles/DatabaseManager.cpp  
 )
 
-
+target_link_libraries(hero_game PRIVATE SQLite::SQLite3)
