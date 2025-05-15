@@ -1,7 +1,7 @@
 #include "Hero.h"
 
 Hero::Hero(const std::string& name)
-    : name(name), level(1), hp(10), strength(2), xp(0) {}
+    : name(name), level(1), hp(10), strength(2), xp(0), gold(0) {}
 
 void Hero::takeDamage(int dmg) {
     hp -= dmg;
@@ -23,9 +23,19 @@ void Hero::levelUpIfNeeded() {
     }
 }
 
+
+
 int Hero::getHP() const { return hp; }
 int Hero::getStrength() const { return strength; }
 int Hero::getXP() const { return xp; }
 int Hero::getLevel() const { return level; }
 std::string Hero::getName() const { return name; }
 bool Hero::isAlive() const { return hp > 0; }
+
+void Hero::addGold(int amount) {
+    gold += amount;
+}
+
+int Hero::getGold() const {
+    return gold;
+}

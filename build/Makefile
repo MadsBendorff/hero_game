@@ -129,6 +129,30 @@ hero_game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/build
 .PHONY : hero_game/fast
 
+SourceFiles/Cave.o: SourceFiles/Cave.cpp.o
+.PHONY : SourceFiles/Cave.o
+
+# target to build an object file
+SourceFiles/Cave.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o
+.PHONY : SourceFiles/Cave.cpp.o
+
+SourceFiles/Cave.i: SourceFiles/Cave.cpp.i
+.PHONY : SourceFiles/Cave.i
+
+# target to preprocess a source file
+SourceFiles/Cave.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.i
+.PHONY : SourceFiles/Cave.cpp.i
+
+SourceFiles/Cave.s: SourceFiles/Cave.cpp.s
+.PHONY : SourceFiles/Cave.s
+
+# target to generate assembly for a file
+SourceFiles/Cave.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.s
+.PHONY : SourceFiles/Cave.cpp.s
+
 SourceFiles/CombatManager.o: SourceFiles/CombatManager.cpp.o
 .PHONY : SourceFiles/CombatManager.o
 
@@ -176,6 +200,30 @@ SourceFiles/Enemy.s: SourceFiles/Enemy.cpp.s
 SourceFiles/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.s
 .PHONY : SourceFiles/Enemy.cpp.s
+
+SourceFiles/EnemyFactory.o: SourceFiles/EnemyFactory.cpp.o
+.PHONY : SourceFiles/EnemyFactory.o
+
+# target to build an object file
+SourceFiles/EnemyFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o
+.PHONY : SourceFiles/EnemyFactory.cpp.o
+
+SourceFiles/EnemyFactory.i: SourceFiles/EnemyFactory.cpp.i
+.PHONY : SourceFiles/EnemyFactory.i
+
+# target to preprocess a source file
+SourceFiles/EnemyFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.i
+.PHONY : SourceFiles/EnemyFactory.cpp.i
+
+SourceFiles/EnemyFactory.s: SourceFiles/EnemyFactory.cpp.s
+.PHONY : SourceFiles/EnemyFactory.s
+
+# target to generate assembly for a file
+SourceFiles/EnemyFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hero_game.dir/build.make CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.s
+.PHONY : SourceFiles/EnemyFactory.cpp.s
 
 SourceFiles/Hero.o: SourceFiles/Hero.cpp.o
 .PHONY : SourceFiles/Hero.o
@@ -234,12 +282,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hero_game"
+	@echo "... SourceFiles/Cave.o"
+	@echo "... SourceFiles/Cave.i"
+	@echo "... SourceFiles/Cave.s"
 	@echo "... SourceFiles/CombatManager.o"
 	@echo "... SourceFiles/CombatManager.i"
 	@echo "... SourceFiles/CombatManager.s"
 	@echo "... SourceFiles/Enemy.o"
 	@echo "... SourceFiles/Enemy.i"
 	@echo "... SourceFiles/Enemy.s"
+	@echo "... SourceFiles/EnemyFactory.o"
+	@echo "... SourceFiles/EnemyFactory.i"
+	@echo "... SourceFiles/EnemyFactory.s"
 	@echo "... SourceFiles/Hero.o"
 	@echo "... SourceFiles/Hero.i"
 	@echo "... SourceFiles/Hero.s"

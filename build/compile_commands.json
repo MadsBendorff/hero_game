@@ -18,5 +18,15 @@
   "directory": "/home/sammy/hero_game/build",
   "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o -c /home/sammy/hero_game/SourceFiles/CombatManager.cpp",
   "file": "/home/sammy/hero_game/SourceFiles/CombatManager.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o -c /home/sammy/hero_game/SourceFiles/EnemyFactory.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/EnemyFactory.cpp"
+},
+{
+  "directory": "/home/sammy/hero_game/build",
+  "command": "/usr/bin/g++  -I/home/sammy/hero_game/Headers -g -o CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o -c /home/sammy/hero_game/SourceFiles/Cave.cpp",
+  "file": "/home/sammy/hero_game/SourceFiles/Cave.cpp"
 }
 ]

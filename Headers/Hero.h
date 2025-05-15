@@ -14,6 +14,8 @@ public:
     int getLevel() const;
     std::string getName() const;
     bool isAlive() const;
+    void addGold(int amount);
+    int getGold() const;
 
 private:
     std::string name;
@@ -21,6 +23,7 @@ private:
     int strength;
     int xp;
     int level;
+    int gold;
 };
 
 #endif 

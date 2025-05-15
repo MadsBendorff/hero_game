@@ -125,12 +125,42 @@ CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sammy/hero_game/SourceFiles/CombatManager.cpp -o CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.s
 
+CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o: CMakeFiles/hero_game.dir/flags.make
+CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o: ../SourceFiles/EnemyFactory.cpp
+CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o: CMakeFiles/hero_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sammy/hero_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o -MF CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o.d -o CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o -c /home/sammy/hero_game/SourceFiles/EnemyFactory.cpp
+
+CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sammy/hero_game/SourceFiles/EnemyFactory.cpp > CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.i
+
+CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sammy/hero_game/SourceFiles/EnemyFactory.cpp -o CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.s
+
+CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o: CMakeFiles/hero_game.dir/flags.make
+CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o: ../SourceFiles/Cave.cpp
+CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o: CMakeFiles/hero_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sammy/hero_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o -MF CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o.d -o CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o -c /home/sammy/hero_game/SourceFiles/Cave.cpp
+
+CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sammy/hero_game/SourceFiles/Cave.cpp > CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.i
+
+CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sammy/hero_game/SourceFiles/Cave.cpp -o CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.s
+
 # Object files for target hero_game
 hero_game_OBJECTS = \
 "CMakeFiles/hero_game.dir/main.cpp.o" \
 "CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o" \
 "CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o" \
-"CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o"
+"CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o" \
+"CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o" \
+"CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o"
 
 # External object files for target hero_game
 hero_game_EXTERNAL_OBJECTS =
@@ -139,9 +169,11 @@ hero_game: CMakeFiles/hero_game.dir/main.cpp.o
 hero_game: CMakeFiles/hero_game.dir/SourceFiles/Hero.cpp.o
 hero_game: CMakeFiles/hero_game.dir/SourceFiles/Enemy.cpp.o
 hero_game: CMakeFiles/hero_game.dir/SourceFiles/CombatManager.cpp.o
+hero_game: CMakeFiles/hero_game.dir/SourceFiles/EnemyFactory.cpp.o
+hero_game: CMakeFiles/hero_game.dir/SourceFiles/Cave.cpp.o
 hero_game: CMakeFiles/hero_game.dir/build.make
 hero_game: CMakeFiles/hero_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sammy/hero_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable hero_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sammy/hero_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable hero_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hero_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

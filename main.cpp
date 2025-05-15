@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Headers/Hero.h"
-#include "Headers/Enemy.h"
-#include "Headers/CombatManager.h"
+#include "Hero.h"
+#include "Enemy.h"
+#include "CombatManager.h"
+#include "EnemyFactory.h"
+#include "Cave.h"
 
 int main() {
     std::string name;
@@ -11,15 +13,10 @@ int main() {
     std::getline(std::cin, name);
     Hero hero(name);
 
-    std::vector<Enemy> enemies = {
-        Enemy("Hest", 4, 1, 100),
-        Enemy("Weak Goblin", 4, 2, 200),
-        Enemy("Strong Goblin", 8, 3, 400),
-        Enemy("Stronger Goblin", 10, 4, 500),
-        Enemy("Den stærkeste Goblin", 15, 5, 800),
-        Enemy("Abe Kongen", 30, 5, 1000),
-        Enemy("Enhjørning", 5, 8, 1500),
-        Enemy("Drage", 100, 10, 3000)
+    std::vector<Cave> caves = {
+        Cave("Goblin Nest", 50, EnemyFactory::generateEnemies(hero.getLevel())),
+        Cave("Dragon Den", 100, EnemyFactory::generateEnemies(hero.getLevel())),
+        Cave("The Dark Forest", 75, EnemyFactory::generateEnemies(hero.getLevel()))
     };
 
     while (hero.isAlive()) {
@@ -28,14 +25,13 @@ int main() {
                   << " | HP: " << hero.getHP()
                   << " | XP: " << hero.getXP()
                   << " | Level: " << hero.getLevel()
-                  << " | Strength: " << hero.getStrength() << "\n";
+                  << " | Strength: " << hero.getStrength()
+                  << " | Gold: " << hero.getGold() << "\n";
 
-        std::cout << "\nChoose an enemy to fight:\n";
-        for (size_t i = 0; i < enemies.size(); ++i) {
-            std::cout << i + 1 << ". " << enemies[i].getName()
-                      << " (HP: " << enemies[i].getHP()
-                      << ", Strength: " << enemies[i].getStrength()
-                      << ", XP: " << enemies[i].getXPReward() << ")\n";
+        std::cout << "\nChoose a cave to enter:\n";
+        for (size_t i = 0; i < caves.size(); ++i) {
+            std::cout << i + 1 << ". " << caves[i].getName()
+                      << " (Gold reward: " << caves[i].getGold() << ")\n";
         }
         std::cout << "0. Quit\n";
 
@@ -48,16 +44,25 @@ int main() {
             break;
         }
 
-        if (choice < 1 || choice > static_cast<int>(enemies.size())) {
+        if (choice < 1 || choice > static_cast<int>(caves.size())) {
             std::cout << "Invalid choice.\n";
             continue;
         }
 
-        CombatManager::fight(hero, enemies[choice - 1]);
+        Cave& selectedCave = caves[choice - 1];
+        auto& enemies = selectedCave.getEnemies();
 
-        if (!hero.isAlive()) {
-            std::cout << "Game over.\n";
-            break;
+        std::cout << "Entering " << selectedCave.getName() << "...\n";
+        for (Enemy& enemy : enemies) {
+            if (!hero.isAlive()) break;
+            CombatManager::fight(hero, enemy);
+        }
+
+        if (hero.isAlive()) {
+            std::cout << "You completed the cave and earned " << selectedCave.getGold() << " gold!\n";
+            hero.addGold(selectedCave.getGold());
+        } else {
+            std::cout << "You died in the cave...\n";
         }
     }
 
